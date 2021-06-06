@@ -4,8 +4,8 @@ import {View, Text, NativeModules} from 'react-native';
 const App = () => {
   useEffect(() => {
     NativeModules.SatisMeter.hook(
-      '<userId>', //user id
-      '<writeKey>', // satismeter write key
+      `2`, //user id
+      'TKDQHfvOunc1rHpP', // satismeter write key
       { // extra payload
         name: 'John Doe',
         company: "Panda's Burgers",
@@ -16,7 +16,7 @@ const App = () => {
     );
   }, []);
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#fff'}}>
       <Text>SatisMeter Integration</Text>
     </View>
   );
